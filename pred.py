@@ -27,10 +27,10 @@ def main():
         transforms.Resize(size=235, interpolation=transforms.InterpolationMode.BICUBIC, max_size=None, antialias=None),
         transforms.CenterCrop(size=(224, 224)),
         transforms.ToTensor(),
-        transforms.Normalize(mean=(0.485, 0.456, 0.406),std=(0.229, 0.224, 0.225))
+        # transforms.Normalize(mean=(0.485, 0.456, 0.406),std=(0.229, 0.224, 0.225))
     ])
 
-    img = Image.open("uploads/image_06734.jpg")
+    img = Image.open("data/test/1/image_06734.jpg")
     img_tensor = transform(img)
 
     print(img_tensor)
