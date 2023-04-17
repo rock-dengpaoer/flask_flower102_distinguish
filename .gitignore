@@ -1,5 +1,6 @@
 *.tar
 *.pt
+*.onnx
 
 data/*
 uploads/*
